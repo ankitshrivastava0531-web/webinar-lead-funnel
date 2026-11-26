@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Live Webinar: Lead Tracking That Works | Register</title>
+<meta name="description" content="Register for a free 45-minute live webinar on building a lead funnel with accurate conversion tracking.">
+
+<!-- Data layer must exist before GTM loads -->
+<script>window.dataLayer = window.dataLayer || [];</script>
+
+<!-- Google Tag Manager: replace GTM-XXXXXXX with your container ID -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
+
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#1c2430;background:#f4f6f9;line-height:1.55}
+  .wrap{max-width:1040px;margin:0 auto;padding:24px 18px 48px}
+  header{font-weight:700;font-size:18px;color:#0b5cab;padding:6px 0 22px}
+  .grid{display:grid;grid-template-columns:1.15fr 1fr;gap:32px;align-items:start}
+  h1{font-size:34px;line-height:1.2;margin-bottom:14px}
+  .tag{display:inline-block;background:#e3efff;color:#0b5cab;font-size:13px;font-weight:600;padding:4px 10px;border-radius:20px;margin-bottom:14px}
+  .lead{font-size:17px;color:#3c4858;margin-bottom:18px}
+  ul.points{list-style:none;margin:0 0 20px}
+  ul.points li{padding:7px 0 7px 26px;position:relative}
+  ul.points li:before{content:"";position:absolute;left:0;top:14px;width:12px;height:7px;border-left:3px solid #1a9c5b;border-bottom:3px solid #1a9c5b;transform:rotate(-45deg)}
+  .meta{font-size:15px;color:#3c4858;border-top:1px solid #dde3ea;padding-top:14px}
+  .card{background:#fff;border-radius:12px;padding:24px;box-shadow:0 4px 18px rgba(20,40,80,.09)}
+  .card h2{font-size:21px;margin-bottom:4px}
+  .card p.sub{font-size:14px;color:#5a6676;margin-bottom:16px}
+  label{display:block;font-size:14px;font-weight:600;margin:12px 0 5px}
+  input[type=text],input[type=email],input[type=tel]{width:100%;padding:12px;border:1px solid #c4cdd8;border-radius:8px;font-size:16px}
+  input:focus{outline:2px solid #0b5cab;border-color:#0b5cab}
+  .err{color:#c0392b;font-size:13px;min-height:16px;margin-top:3px}
+  button{width:100%;margin-top:16px;padding:14px;border:0;border-radius:8px;background:#0b5cab;color:#fff;font-size:17px;font-weight:700;cursor:pointer}
+  button:disabled{opacity:.6;cursor:wait}
+  .note{font-size:12px;color:#6b7785;margin-top:10px;text-align:center}
+  .formerr{color:#c0392b;font-size:14px;margin-top:10px;text-align:center}
+  .hp{position:absolute;left:-9999px}
+  footer{font-size:12px;color:#6b7785;text-align:center;margin-top:36px}
+  @media(max-width:800px){.grid{grid-template-columns:1fr;gap:22px}h1{font-size:27px}.wrap{padding:16px 14px 36px}}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript): replace GTM-XXXXXXX -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="wrap">
+  <header>Demo Webinar Co. <span style="font-weight:400;color:#6b7785;font-size:13px">(assessment demo page)</span></header>
+
+  <div class="grid">
+    <section>
+      <span class="tag">Free live webinar &middot; 45 minutes</span>
+      <h1>Lead Tracking That Works: From Ad Click to Qualified Lead</h1>
+      <p class="lead">Learn how to build a lead funnel where every lead is attributed to its source and every conversion is reported correctly.</p>
+      <ul class="points">
+        <li>A UTM structure your whole team can follow</li>
+        <li>Browser and server tracking without double counting</li>
+        <li>A simple lead dashboard in Google Sheets</li>
+      </ul>
+      <p class="meta"><strong>When:</strong> Saturday, 11:00 AM IST &nbsp;|&nbsp; <strong>Where:</strong> Online &nbsp;|&nbsp; <strong>Cost:</strong> Free</p>
+      <p style="margin-top:18px"><a href="#lead-form" id="cta-top" class="cta-btn" style="color:#0b5cab;font-weight:700">Reserve my seat &darr;</a></p>
+    </section>
+
+    <section class="card">
+      <h2>Register for free</h2>
+      <p class="sub">Fill in your details and we will send you the joining link.</p>
+
+      <form id="lead-form" novalidate>
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+        <div class="err" id="err-name"></div>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+        <div class="err" id="err-email"></div>
+
+        <label for="phone">Phone (10-digit mobile)</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="numeric" maxlength="14" required>
+        <div class="err" id="err-phone"></div>
+
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" autocomplete="address-level2" required>
+        <div class="err" id="err-city"></div>
+
+        <!-- Honeypot: real users never see or fill this -->
+        <input type="text" name="website" id="website" class="hp" tabindex="-1" autocomplete="off">
+
+        <!-- Hidden attribution fields, filled by script -->
+        <input type="hidden" name="utm_source" id="utm_source">
+        <input type="hidden" name="utm_medium" id="utm_medium">
+        <input type="hidden" name="utm_campaign" id="utm_campaign">
+        <input type="hidden" name="utm_term" id="utm_term">
+        <input type="hidden" name="utm_content" id="utm_content">
+        <input type="hidden" name="gclid" id="gclid">
+        <input type="hidden" name="fbclid" id="fbclid">
+        <input type="hidden" name="event_id" id="event_id">
+
+        <button type="submit" id="submit-btn" class="cta-btn">Register now</button>
+        <div class="formerr" id="form-error"></div>
+        <p class="note">Demo page built for an assessment. Use test details only.</p>
+      </form>
+    </section>
+  </div>
+
+  <footer>Demo Webinar Co. is a fictional name used for a tracking assessment.</footer>
+</div>
+
+<script>
+(function () {
+  // ====== CONFIG: paste your Apps Script web app URL (ends with /exec) ======
+  var WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbycTgeEgQTR308q102Qff8RZ_tF62gc_eHUOs8G0tXMyD7ESqnp2cygayxmGntF1LyV4g/exec';
+  var THANK_YOU_PAGE = 'thank-you.html';
+  // ==========================================================================
+
+  var ATTR_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid'];
+
+  // 1. Read attribution values from the URL. Keep them for the session so they
+  //    survive a page refresh without the query string.
+  var params = new URLSearchParams(window.location.search);
+  var hasUrlUtm = ATTR_KEYS.some(function (k) { return params.get(k); });
+  ATTR_KEYS.forEach(function (k) {
+    var v = '';
+    if (hasUrlUtm) {
+      v = (params.get(k) || '').trim();
+      try { sessionStorage.setItem('attr_' + k, v); } catch (e) {}
+    } else {
+      try { v = sessionStorage.getItem('attr_' + k) || ''; } catch (e) {}
+    }
+    // UTM values are stored lowercase so "Meta" and "meta" report as one source
+    if (k.indexOf('utm_') === 0) { v = v.toLowerCase(); }
+    document.getElementById(k).value = v;
+  });
+
+  // 2. One unique event ID per form load. The same ID goes to the Meta Pixel
+  //    (browser) and to the Conversions API (server) so Meta counts one Lead.
+  function newEventId() {
+    if (window.crypto && crypto.randomUUID) { return crypto.randomUUID(); }
+    return 'evt-' + Date.now() + '-' + Math.random().toString(36).slice(2, 12);
+  }
+  document.getElementById('event_id').value = newEventId();
+
+  function getCookie(name) {
+    var m = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+    return m ? decodeURIComponent(m[1]) : '';
+  }
+
+  // 3. Validation
+  function setErr(id, msg) { document.getElementById('err-' + id).textContent = msg; }
+  function validate(d) {
+    var ok = true;
+    ['name', 'email', 'phone', 'city'].forEach(function (f) { setErr(f, ''); });
+    if (d.name.length < 2) { setErr('name', 'Please enter your name.'); ok = false; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(d.email)) { setErr('email', 'Please enter a valid email.'); ok = false; }
+    if (!/^[6-9]\d{9}$/.test(d.phone)) { setErr('phone', 'Please enter a 10-digit mobile number.'); ok = false; }
+    if (d.city.length < 2) { setErr('city', 'Please enter your city.'); ok = false; }
+    return ok;
+  }
+
+  // 4. Submit
+  var form = document.getElementById('lead-form');
+  var btn = document.getElementById('submit-btn');
+  var formError = document.getElementById('form-error');
+  var sending = false;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (sending) { return; }            // blocks double clicks, so one lead = one row
+    formError.textContent = '';
+
+    var phoneDigits = form.phone.value.replace(/\D/g, '');
+    if (phoneDigits.length === 12 && phoneDigits.indexOf('91') === 0) { phoneDigits = phoneDigits.slice(2); }
+    if (phoneDigits.length === 11 && phoneDigits.charAt(0) === '0') { phoneDigits = phoneDigits.slice(1); }
+
+    var data = {
+      name: form.name.value.trim(),
+      email: form.email.value.trim().toLowerCase(),
+      phone: phoneDigits,
+      city: form.city.value.trim(),
+      website: form.website.value,      // honeypot
+      event_id: form.event_id.value,
+      page_url: window.location.href,
+      user_agent: navigator.userAgent,
+      fbp: getCookie('_fbp'),
+      fbc: getCookie('_fbc')
+    };
+    ATTR_KEYS.forEach(function (k) { data[k] = document.getElementById(k).value; });
+
+    if (!validate(data)) { return; }
+
+    sending = true;
+    btn.disabled = true;
+    btn.textContent = 'Submitting...';
+
+    // text/plain keeps this a "simple" request, so the browser sends no CORS preflight,
+    // which Apps Script web apps cannot answer.
+    fetch(WEB_APP_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(data),
+      redirect: 'follow'
+    })
+    .then(function (r) { return r.json(); })
+    .then(function (res) {
+      if (!res || !res.ok) { throw new Error((res && res.error) || 'Submission failed'); }
+      // Hand the lead details to the Thank You page. It fires the conversion tags once.
+      var pass = { event_id: data.event_id };
+      ATTR_KEYS.forEach(function (k) { pass[k] = data[k]; });
+      try { sessionStorage.setItem('lead_success', JSON.stringify(pass)); } catch (e) {}
+      window.location.href = THANK_YOU_PAGE;
+    })
+    .catch(function (err) {
+      sending = false;
+      btn.disabled = false;
+      btn.textContent = 'Register now';
+      formError.textContent = 'Sorry, we could not submit the form. Please try again.';
+      window.dataLayer.push({ event: 'lead_form_error', error_message: String(err && err.message || err) });
+    });
+  });
+})();
+</script>
+</body>
+</html>
