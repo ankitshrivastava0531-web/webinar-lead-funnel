@@ -114,7 +114,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script>
 (function () {
   // ====== CONFIG: paste your Apps Script web app URL (ends with /exec) ======
-  var WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbycTgeEgQTR308q102Qff8RZ_tF62gc_eHUOs8G0tXMyD7ESqnp2cygayxmGntF1LyV4g/exec';
+  var WEB_APP_URL = 'PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE';
   var THANK_YOU_PAGE = 'thank-you.html';
   // ==========================================================================
 
@@ -192,6 +192,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     ATTR_KEYS.forEach(function (k) { data[k] = document.getElementById(k).value; });
 
     if (!validate(data)) { return; }
+
+    // Tell GTM a valid form was submitted (fires only after validation passes)
+    window.dataLayer.push({
+      event: 'lead_form_submit',
+      event_id: data.event_id,
+      utm_source: data.utm_source,
+      utm_medium: data.utm_medium,
+      utm_campaign: data.utm_campaign
+    });
 
     sending = true;
     btn.disabled = true;
